@@ -1,0 +1,41 @@
+:root {
+  --text-accent: #057af0;
+  --text-title: #e3e3e3;
+  --text-content: #9b9b9b;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/* Containers and grids */
+.container {
+  max-width: 1200px;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-content);
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+/* Nav-Bar */
