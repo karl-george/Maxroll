@@ -46,6 +46,12 @@ h3 {
   font-size: 1.8rem;
 }
 
+/* Background */
+.background {
+  background: url(../images/bg.jpeg);
+  height: 100vh; /*! Change this */
+}
+
 /* Nav-Bar */
 
 .nav-bar {
@@ -101,4 +107,40 @@ a {
 .nav-search {
   max-width: 20px;
   cursor: pointer;
+}
+
+/* Hero Carousel */
+.hero-carousel {
+  position: relative;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item-visible {
+  display: block;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-dots {
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+}
+
+.swiper {
+  display: inline-block;
+  width: 40px;
+  height: 5px;
+  background-color: var(--text-content);
+  cursor: pointer;
+}
+
+.swiper-selected {
+  background-color: var(--text-accent);
 }
