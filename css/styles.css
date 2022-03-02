@@ -13,6 +13,7 @@
 /* Containers and grids */
 .container {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Typography */
@@ -24,6 +25,13 @@ html {
 body {
   font-size: 1.6rem;
   color: var(--text-content);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -39,3 +47,58 @@ h3 {
 }
 
 /* Nav-Bar */
+
+.nav-bar {
+  background-color: #131313;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  margin-right: 15%;
+}
+
+.nav-list {
+  width: auto;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-title);
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-item {
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+}
+
+.nav-item:hover {
+  background-color: #2a2a2a;
+}
+
+.nav-item-selected {
+  color: var(--text-accent);
+}
+
+.nav-toggler {
+  display: none;
+}
+
+.nav-search {
+  max-width: 20px;
+  cursor: pointer;
+}
