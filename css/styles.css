@@ -16,6 +16,24 @@
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+}
+
+.grid-1x3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Generic styles */
+a {
+  text-decoration: none;
+  color: var(--text-title);
+}
+
+ul {
+  padding-left: 0;
+}
+
 /* Typography */
 
 html {
@@ -75,11 +93,6 @@ h3 {
   font-weight: bold;
   justify-content: space-between;
   text-transform: uppercase;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-title);
 }
 
 .list {
@@ -165,4 +178,62 @@ a {
 
 .swiper-selected {
   background-color: var(--text-accent);
+}
+
+/* Twitch Section */
+
+.video-player-container,
+.streamer-container,
+.featured-content-container {
+  color: var(--text-accent);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.video-player {
+  width: 90%;
+  height: 100%;
+  border: 1px solid black;
+  color: var(--text-title);
+  text-align: center;
+}
+
+.vid-player-content {
+  margin-top: 6rem;
+}
+
+.streamer-list-container {
+  color: var(--text-title);
+  font-size: 2rem;
+  width: 90%;
+}
+
+.flex-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.streamer-pic {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+.streamer-name {
+  flex-grow: 2;
+}
+
+.icon {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.streamer-twitter:hover {
+  color: var(--text-accent);
+}
+
+.streamer-twitch:hover {
+  /*! Change to Twitch purple*/
+  color: purple;
 }
