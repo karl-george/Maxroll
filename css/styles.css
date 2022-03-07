@@ -116,6 +116,7 @@ a {
 
 .carousel-item {
   display: none;
+  position: relative;
 }
 
 .carousel-item-visible {
@@ -125,6 +126,27 @@ a {
 .carousel-item img {
   width: 100%;
   height: auto;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 2.8rem;
+  left: 3em;
+  color: var(--text-title);
+}
+
+.carousel-content-title {
+  font-size: 3.2rem;
+  margin-bottom: 0;
+}
+
+.carousel-content-text {
+  margin-top: 0.5rem;
+}
+
+.carousel-content-text > span {
+  color: var(--text-accent);
+  font-weight: bold;
 }
 
 .carousel-dots {
