@@ -187,11 +187,12 @@ h3 {
 .featured-content-container {
   color: var(--text-accent);
   font-family: "Roboto Condensed", sans-serif;
+  padding: 0 1rem;
 }
 
 .video-player {
   width: 90%;
-  height: 100%;
+  height: 200px;
   border: 1px solid black;
   color: var(--text-title);
   text-align: center;
@@ -218,6 +219,22 @@ h3 {
   max-width: 50px;
   max-height: 50px;
   border-radius: 50%;
+  position: relative;
+}
+
+.online-status {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(95, 95, 95);
+  border: 2px solid black;
+  position: relative;
+  bottom: 55px;
+  left: 40px;
+}
+
+.online {
+  background-color: rgb(90, 251, 90);
 }
 
 .streamer-name {
@@ -236,4 +253,28 @@ h3 {
 .streamer-twitch:hover {
   /*! Change to Twitch purple*/
   color: purple;
+}
+
+.featured-content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -2rem;
+}
+
+.featured-content-news-link > a {
+  color: var(--text-content);
+  text-decoration: underline;
+}
+
+.featured-yt-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-title);
+}
+
+.featured-yt-author {
+  color: var(--text-content);
+  font-size: 1.6rem;
+  font-weight: 400;
 }
