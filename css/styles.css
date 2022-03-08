@@ -278,3 +278,45 @@ h3 {
   font-size: 1.6rem;
   font-weight: 400;
 }
+
+.divider {
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--text-content);
+}
+
+/* Hot Topic Section */
+
+.topics-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topics-title {
+  color: var(--text-accent);
+}
+
+.slider-control {
+  max-width: 35px;
+}
+
+.slider-prev {
+  transform: rotate(-90deg);
+}
+
+.slider-next {
+  transform: rotate(90deg);
+}
+
+.my-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.slide-img {
+  width: 100%;
+  max-width: 280px;
+}
