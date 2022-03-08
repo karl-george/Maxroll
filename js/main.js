@@ -83,3 +83,14 @@ let slider = tns({
     },
   },
 });
+
+const sliderNext = document.getElementById("slider-next");
+const sliderPrev = document.getElementById("slider-prev");
+
+sliderNext.onclick = function (e) {
+  slider.goTo("next");
+};
+
+sliderPrev.onclick = function (e) {
+  slider.goTo("prev");
+};

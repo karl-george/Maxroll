@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/dca7618442.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -22,140 +26,21 @@
   <body>
     <div class="background">
       <div class="container">
-        <div class="slider">
-          <div class="topics-title-container">
-            <h2 class="topics-title">Hot Topics</h2>
-            <div>
-              <img
-                class="slider-control slider-prev"
-                id="slider-prev"
-                src="images/slider-prev.webp"
-                alt=""
-              />
-              <img
-                class="slider-control slider-next"
-                id="slider-next"
-                src="images/slider-next.webp"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="my-slider">
-            <!-- Slide1 -->
-            <div class="slide">
-              <a href="">
-                <img class="slide-img" src="images/topic1.jpeg" alt="" />
-                <h3 class="slide-title">1-50 Leveling Guide</h3>
-                <p class="slide-content">
-                  By <span>Choilicious</span> <br />
-                  Last Updated on February 7th, 2022
-                </p>
-              </a>
-            </div>
-            <!-- Slide2 -->
-            <div class="slide">
-              <a href="">
-                <img class="slide-img" src="images/topic2.jpeg" alt="" />
-                <h3 class="slide-title">Post Level 50 Guide</h3>
-                <p class="slide-content">
-                  By <span>Choilicious</span> <br />
-                  Last Updated on February 22nd, 2022
-                </p>
-              </a>
-            </div>
-            <!-- Slide3 -->
-            <div class="slide">
-              <a href="">
-                <img class="slide-img" src="images/topic3.webp" alt="" />
-                <h3 class="slide-title">Sorceress Leveling Guide</h3>
-                <p class="slide-content">
-                  By <span>Saintone</span> <br />
-                  Last Updated on February 12th, 2022
-                </p>
-              </a>
-            </div>
-            <!-- Slide 4 -->
-            <div class="slide">
-              <a href="">
-                <img class="slide-img" src="images/topic4.webp" alt="" />
-                <h3 class="slide-title">Scrapper Leveling Guide</h3>
-                <p class="slide-content">
-                  By <span>Choilicious</span> <br />
-                  Last Updated on January 21st, 2022
-                </p>
-              </a>
-            </div>
-            <!-- Slide 5 -->
-            <div class="slide">
-              <a href="">
-                <img class="slide-img" src="images/topic5.webp" alt="" />
-                <h3 class="slide-title">Deathblade Leveling Guide</h3>
-                <p class="slide-content">
-                  By <span>Reitear</span> <br />
-                  Last Updated on February 11th, 2022
-                </p>
-              </a>
-            </div>
-            <!-- Slide6 -->
-            <div class="slide">
-              <a href="">
-                <img class="slide-img" src="images/topic6.webp" alt="" />
-                <h3 class="slide-title">Berserker Leveling Guide</h3>
-                <p class="slide-content">
-                  By <span>Reitear</span> <br />
-                  Last Updated on February 11th, 2022
-                </p>
-              </a>
-            </div>
-            <!-- Slide7 -->
-            <div class="slide">
-              <a href="">
-                <img class="slide-img" src="images/topic7.jpeg" alt="" />
-                <h3 class="slide-title">Paladin Leveling Guide</h3>
-                <p class="slide-content">
-                  By <span>Reitear</span> <br />
-                  Last Updated on February 11th, 2022
-                </p>
-              </a>
-            </div>
-            <!-- Slide8 -->
-            <div class="slide">
-              <a href="">
-                <img class="slide-img" src="images/topic8.jpeg" alt="" />
-                <h3 class="slide-title">General Raid Guide</h3>
-                <p class="slide-content">
-                  By <span>Perciculum</span> <br />
-                  Last Updated on January 26th, 2022
-                </p>
-              </a>
-            </div>
-            <!-- Slide 9 -->
-            <div class="slide">
-              <a href="">
-                <img class="slide-img" src="images/topic9.webp" alt="" />
-                <h3 class="slide-title">Gunslinger PvP Guide</h3>
-                <p class="slide-content">
-                  By <span>Starlast</span> <br />
-                  Last Updated on February 7th, 2022
-                </p>
-              </a>
-            </div>
-            <!-- Slide 10 -->
-            <div class="slide">
-              <a href="">
-                <img class="slide-img" src="images/topic10.webp" alt="" />
-                <h3 class="slide-title">Vertus Guardian Raid Guide</h3>
-                <p class="slide-content">
-                  By <span>Choilicious</span> <br />
-                  Last Updated on February 7th, 2022
-                </p>
-              </a>
-            </div>
-          </div>
+        <h2>Quick Search</h2>
+        <div class="input-group">
+          <input
+            class="search-bar"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search for..."
+          />
+          <button class="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
       </div>
     </div>
-
     <script src="js/main.js"></script>
   </body>
 </html>
