@@ -16,6 +16,12 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
 .grid {
   display: grid;
 }
@@ -26,6 +32,16 @@
 
 .grid-1x4 {
   grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-1x3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-1x4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Generic styles */
@@ -90,6 +106,7 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding: 2rem 0;
 }
 
 .nav-brand {
@@ -130,6 +147,38 @@ h3 {
 .nav-search {
   max-width: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    flex-wrap: wrap;
+    padding: 1.5rem 0;
+  }
+
+  .nav-list {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .nav-toggler {
+    cursor: pointer;
+    display: block;
+  }
+
+  .nav-search {
+    margin-right: -35rem;
+  }
+
+  .collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .collapsible-expanded .collapsible-content {
+    max-height: 100%;
+    opacity: 1;
+  }
 }
 
 /* Hero Carousel */
@@ -266,11 +315,6 @@ h3 {
   color: var(--text-accent);
 }
 
-.streamer-twitch:hover {
-  /*! Change to Twitch purple*/
-  color: purple;
-}
-
 .featured-content-title {
   display: flex;
   justify-content: space-between;
@@ -299,6 +343,12 @@ h3 {
   width: 100%;
   height: 1.5px;
   background-color: rgb(75, 75, 75);
+}
+
+@media screen and (max-width: 1024px) {
+  .video-player-container {
+    display: none;
+  }
 }
 
 /* Hot Topic Section */
@@ -375,6 +425,12 @@ h3 {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1024px) {
+  .slide {
+    text-align: center;
+  }
+}
+
 /* Search Section */
 
 .search-bar {
@@ -438,10 +494,32 @@ h3 {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1024px) {
+  .build-guides-container,
+  .guardian-raids-container,
+  .abyssal-dungeons-container,
+  .resources-container {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .abyssal-dungeons-container,
+  .resources-container {
+    margin-top: 1.5rem;
+  }
+
+  .updated {
+    max-width: 100%;
+  }
+}
+
 /* Footer */
 .background-footer {
   background: url(../images/bg-footer.jpeg);
   border-top: 2px solid black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .footer-content {
@@ -489,4 +567,52 @@ h3 {
 .footer-copyright-content {
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo-container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .brand {
+    margin-bottom: 3rem;
+  }
+
+  .socials {
+    margin-bottom: 1rem;
+    max-width: 500px;
+  }
+
+  .footer-content {
+    padding-top: 3rem;
+  }
+
+  .footer-content .grid-1x4 {
+    text-align: center;
+  }
+
+  .footer-list {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer-list .list {
+    margin: 1rem auto;
+  }
+
+  .background-footer {
+    background: url(../images/bg-footer.jpeg);
+    border-top: 2px solid black;
+  }
+
+  .link-container,
+  .games-container {
+    padding-bottom: 4rem;
+  }
+
+  .link-container .section-header,
+  .games-container .section-header {
+    padding-top: 0.5rem;
+  }
 }

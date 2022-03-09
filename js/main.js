@@ -94,3 +94,11 @@ sliderNext.onclick = function (e) {
 sliderPrev.onclick = function (e) {
   slider.goTo("prev");
 };
+
+// Nav Bar collapsibles
+const collapsibles = document.querySelectorAll(".collapsible");
+collapsibles.forEach((item) =>
+  item.addEventListener("click", function () {
+    this.classList.toggle("collapsible-expanded");
+  })
+);
