@@ -6,7 +6,6 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides((slideIndex += n));
-  console.log(slideIndex);
 }
 
 function currentSlide(n) {
@@ -64,6 +63,7 @@ function goToSlide(index) {
 }
 
 // Tiny Slider js
+
 let slider = tns({
   container: ".my-slider",
   slideBy: "1",
