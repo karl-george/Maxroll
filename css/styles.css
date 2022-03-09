@@ -14,6 +14,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -112,11 +113,7 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 0;
-}
-
-.nav-brand {
-  margin-right: 15%;
+  padding: 0 1rem;
 }
 
 .nav-list {
@@ -155,6 +152,10 @@ h3 {
   cursor: pointer;
 }
 
+.nav-icon-container {
+  order: 8;
+}
+
 @media screen and (max-width: 1024px) {
   .nav {
     flex-wrap: wrap;
@@ -173,7 +174,7 @@ h3 {
   }
 
   .nav-search {
-    margin-right: -35%;
+    margin-right: 2rem;
   }
 
   .collapsible-content {
@@ -185,11 +186,10 @@ h3 {
     max-height: 100%;
     opacity: 1;
   }
-}
 
-@media screen and (max-width: 615px) {
-  .nav-search {
-    margin-right: -25%;
+  .nav-icon-container {
+    order: 0;
+    display: flex;
   }
 }
 
@@ -451,7 +451,7 @@ h3 {
   font-weight: bold;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1199px) {
   .slide {
     text-align: center;
   }
