@@ -256,6 +256,11 @@ h3 {
   max-height: 20px;
 }
 
+.icon-large {
+  max-width: 30px;
+  max-height: 30px;
+}
+
 .streamer-twitter:hover {
   color: var(--text-accent);
 }
@@ -419,4 +424,52 @@ h3 {
 .recent-see-all {
   color: var(--text-accent);
   text-decoration: underline;
+}
+
+/* Footer */
+.background-footer {
+  background: url(../images/bg-footer.jpeg);
+}
+
+.logo-container {
+  grid-column: 1 / span 2;
+  max-width: 480px;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.brand-logo {
+  max-width: 185px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-bottom: 14rem;
+}
+
+.list-item {
+  margin-bottom: 1rem;
+  max-width: 215px;
+}
+
+.list-item:hover {
+  color: var(--text-accent);
+}
+
+.item-content {
+  color: var(--text-content);
+}
+
+.footer-copyright {
+  background-color: black;
+}
+
+.footer-copyright-content {
+  display: flex;
+  justify-content: space-around;
 }
