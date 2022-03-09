@@ -24,6 +24,10 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-1x4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /* Generic styles */
 a {
   text-decoration: none;
@@ -62,6 +66,12 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
+}
+
+.section-header {
+  color: var(--text-accent);
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 2rem 0 0;
 }
 
 /* Background */
@@ -386,4 +396,27 @@ h3 {
   outline: 0;
   border: 0;
   padding: 1rem 2rem;
+}
+
+/* Recently Updated Section */
+.updated-list-title {
+  color: var(--text-title);
+}
+
+.updated-list-content {
+  color: var(--text-content);
+}
+
+.updated-list-content:hover {
+  color: var(--text-accent);
+}
+
+.updated {
+  margin-bottom: 1rem;
+  max-width: 215px;
+}
+
+.recent-see-all {
+  color: var(--text-accent);
+  text-decoration: underline;
 }
