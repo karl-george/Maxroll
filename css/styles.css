@@ -77,13 +77,13 @@ h3 {
 /* Background */
 .background {
   background: url(../images/bg.jpeg);
-  height: 100vh; /*! Change this */
 }
 
 /* Nav-Bar */
 
 .nav-bar {
   background-color: #131313;
+  border-bottom: 2px solid black;
 }
 .nav {
   display: flex;
@@ -135,6 +135,7 @@ h3 {
 /* Hero Carousel */
 .hero-carousel {
   position: relative;
+  padding-top: 2rem;
 }
 
 .carousel-item {
@@ -197,7 +198,7 @@ h3 {
 .featured-content-container {
   color: var(--text-accent);
   font-family: "Roboto Condensed", sans-serif;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 }
 
 .video-player {

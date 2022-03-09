@@ -24,61 +24,176 @@
     <title>Copy of Maxroll</title>
   </head>
   <body>
-    <div class="background-footer">
+    <!-- Navigation bar -->
+    <div class="nav-bar">
       <div class="container">
-        <div class="grid grid-1x4">
-          <div class="logo-container">
-            <div class="brand">
-              <img class="brand-logo" src="images/brand.webp" alt="" />
-            </div>
-            <div class="socials">
-              <img class="icon-large" src="images/twitter.webp" alt="" />
-              <img class="icon-large" src="images/twitch.webp" alt="" />
-              <img class="icon-large" src="images/yt-dark.webp" alt="" />
-              <img class="icon-large" src="images/discord.webp" alt="" />
-              <img class="icon-large" src="images/insta.webp" alt="" />
+        <nav class="nav collapsible" id="home">
+          <a class="nav-brand" href="#">
+            <img class="nav-brand-img" src="images/nav-logo.webp" alt="" />
+          </a>
+          <img class="nav-icon nav-toggler" src="images/toggler.webp" alt="" />
+          <ul class="list nav-list collapsible-content">
+            <li class="nav-item">
+              <a class="nav-item-selected" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a href="#">Build Guides</a></li>
+            <li class="nav-item"><a href="#">Raids</a></li>
+            <li class="nav-item"><a href="#">Resources</a></li>
+            <li class="nav-item"><a href="#">Islands</a></li>
+            <li class="nav-item"><a href="#">World Map</a></li>
+            <li class="nav-item"><a href="#">Team</a></li>
+          </ul>
+          <img class="nav-search" src="images/search-white.webp" alt="" />
+        </nav>
+      </div>
+    </div>
+    <!-- End of Nav bar -->
+    <div class="background">
+      <!-- Hero Carousel -->
+      <div class="container">
+        <div class="hero-carousel">
+          <!-- Images for the carousel -->
+          <div class="carousel-item fade">
+            <a href=""><img src="images/carousel1.jpeg" alt="" /></a>
+            <div class="carousel-content">
+              <h2 class="carousel-content-title">
+                3 WEEKS IN AND WE KEEP ROLLING
+              </h2>
+              <p class="carousel-content-text">
+                February 25th, 2022 by <span>MAXROLL</span>
+              </p>
             </div>
           </div>
-          <div class="link-container">
-            <h2 class="section-header">OTHER LINKS</h2>
-            <ul>
-              <li class="list list-item">
-                <a class="item-content" href="">Contact</a>
-              </li>
-              <li class="list list-item">
-                <a class="item-content" href="">Team</a>
-              </li>
-              <li class="list list-item">
-                <a class="item-content" href="">Donate</a>
-              </li>
-            </ul>
+          <div class="carousel-item fade">
+            <a href=""><img src="images/carousel2.jpeg" alt="" /></a>
+            <div class="carousel-content">
+              <h2 class="carousel-content-title">GET READY FOR LAUNCH</h2>
+              <p class="carousel-content-text">
+                February 7th, 2022 by <span>MAXROLL</span>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item fade">
+            <a href=""><img src="images/carousel3.jpeg" alt="" /></a>
+            <div class="carousel-content">
+              <h2 class="carousel-content-title">POSTS UPDATED FOR TIER 3</h2>
+              <p class="carousel-content-text">
+                February 5th, 2022 by <span>MAXROLL</span>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item fade">
+            <a href=""><img src="images/carousel4.jpeg" alt="" /></a>
+            <div class="carousel-content">
+              <h2 class="carousel-content-title">
+                LOST ARK NEW MAXROLL WEBSITE LAUNCH
+              </h2>
+              <p class="carousel-content-text">
+                January 20th, 2022 by <span>MAXROLL</span>
+              </p>
+            </div>
           </div>
 
-          <div class="games-container">
-            <h2 class="section-header">GAMES</h2>
+          <!-- Dots/Lines to show current image -->
+          <div class="carousel-dots">
+            <span class="swiper" data-index="1"></span>
+            <span class="swiper" data-index="2"></span>
+            <span class="swiper" data-index="3"></span>
+            <span class="swiper" data-index="4"></span>
+          </div>
+        </div>
+        <!-- Streamer Section -->
+        <div class="grid grid-1x3">
+          <div class="video-player-container">
+            <h2>Video Player</h2>
+            <div class="video-player">
+              <div class="vid-player-content">
+                Video Player Not Implemented For Mockup
+              </div>
+            </div>
+          </div>
+          <div class="streamer-container">
+            <h2>More Maxroll Streamers</h2>
             <ul>
-              <li class="list list-item">
-                <a class="item-content" href="">Diablo II</a>
+              <div class="streamer-list-container">
+                <li class="list flex-list">
+                  <a href="#"
+                    ><img class="streamer-pic" src="images/lexyu.png" alt="" />
+                    <div class="online-status"></div>
+                  </a>
+                  <p class="streamer-name"><a href="#">Lexyu</a></p>
+                  <a href=""
+                    ><img class="icon" src="images/twitter.webp" alt=""
+                  /></a>
+                  <a href=""
+                    ><img class="icon" src="images/twitch.webp" alt=""
+                  /></a>
+                </li>
+                <li class="list flex-list">
+                  <a href="#"
+                    ><img
+                      class="streamer-pic"
+                      src="images/saintone.png"
+                      alt="" />
+                    <div class="online-status online"></div
+                  ></a>
+                  <p class="streamer-name"><a href="#">Saintone</a></p>
+                  <a href=""
+                    ><img class="icon" src="images/twitter.webp" alt=""
+                  /></a>
+                  <a href=""
+                    ><img class="icon" src="images/twitch.webp" alt="" />
+                  </a>
+                </li>
+                <li class="list flex-list">
+                  <a href="#"
+                    ><img class="streamer-pic" src="images/raxx.png" alt="" />
+                    <div class="online-status"></div
+                  ></a>
+                  <p class="streamer-name"><a href="#">Raxxanterax</a></p>
+                  <a href=""
+                    ><img
+                      class="icon streamer-twitter"
+                      src="images/twitter.webp"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="icon streamer-twitch"
+                      src="images/twitch.webp"
+                      alt=""
+                  /></a>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="featured-content-container">
+            <div class="featured-content-title">
+              <h2>Featured Content</h2>
+              <span class="featured-content-news-link"
+                ><a href="">View All News</a></span
+              >
+            </div>
+            <ul>
+              <li class="list flex-list">
+                <img src="images/yt.webp" alt="" />
+                <p class="featured-yt-title">
+                  Lost Ark Scrapper Leveling 1-50 Fresh Character <br />
+                  <span class="featured-yt-author">by Choilicous</span>
+                </p>
               </li>
-              <li class="list list-item">
-                <a class="item-content" href="">Diablo III</a>
-              </li>
-              <li class="list list-item">
-                <a class="item-content" href="">Diablo Immortal</a>
-              </li>
-              <li class="list list-item">
-                <a class="item-content" href="">Lost Ark</a>
+              <li class="list flex-list">
+                <img src="images/yt.webp" alt="" />
+                <p class="featured-yt-title">
+                  Lost Ark Abyssal Dungeon Gameplay: Alaric's Sanctuary <br />
+                  <span class="featured-yt-author">by Choilicous</span>
+                </p>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="footer-copyright-content">
-        <p>Copyright &copy; 2022 Maxroll GmbH</p>
-        <p>This version created by Karl George</p>
-      </div>
+      <!-- End of Hero Carousel -->
     </div>
     <script src="js/main.js"></script>
   </body>
